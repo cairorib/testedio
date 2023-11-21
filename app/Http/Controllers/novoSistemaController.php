@@ -11,11 +11,13 @@ class novoSistemaController extends Controller
         
         /* return 'ok funciona '.$name; */
         return response()->json([
-            'oi'=> "ok aqui ${nome} ",
-            'thcau'=>'teste'
+            'oi'=> "ok aqui ${name} ",
+            'thcau'=> $request->all()
         ]);
     }
 /* 
     function (Request $request) {
         return $request->user(); */
 }
+
+
